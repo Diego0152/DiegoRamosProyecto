@@ -1,0 +1,12 @@
+ El volumen de la unidad C es ESD-ISO
+ El n£mero de serie del volumen es: 2E5E-0964
+
+ Directorio de C:\Users\DiegoRR\Desktop\Curso25-26\2§DAMA\Modulos\PServ\ProcessRuntime\Ejercicio13
+
+01/10/2025  19:25    <DIR>          .
+01/10/2025  19:25    <DIR>          ..
+01/10/2025  19:29                 0 fichero1.txt
+01/10/2025  19:25             1.082 redirect.class
+01/10/2025  19:29               776 redirect.java
+               3 archivos          1.858 bytes
+               2 dirs  408.668.467.200 bytes libres
