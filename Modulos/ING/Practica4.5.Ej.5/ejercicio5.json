@@ -1,0 +1,32 @@
+{
+  "Personas": [
+    {
+      "id": "1",
+      "nombre": "Diego",
+      "apellido": "Ramos",
+      "email": "diego06@gmail.com",
+      "telefono": "622876690"
+    },
+    {
+      "nombre": "Antonio",
+      "apellido": "Ameba",
+      "email": "TraperoAntonio@gmail.com",
+      "telefono": "672481290",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "nombre": "Carlos",
+      "apellido": "Carmona",
+      "email": "CarlCarmon06@gmail.com",
+      "telefono": "626128760"
+    },
+    {
+      "id": 5,
+      "nombre": "Antonio",
+      "apellido": "Ameba",
+      "email": "TraperoAntonio@gmail.com",
+      "telefono": "672481290"
+    }
+  ]
+}
