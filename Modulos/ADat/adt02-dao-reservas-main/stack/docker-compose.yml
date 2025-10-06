@@ -4,7 +4,7 @@ services:
 
   db-reservas:
     image: mysql:latest
-    command: --mysql-native-password=ON
+    # command: --mysql-native-password=ON
     restart: "no"
     environment:
       MYSQL_ROOT_PASSWORD: s83n38DGB8d72
