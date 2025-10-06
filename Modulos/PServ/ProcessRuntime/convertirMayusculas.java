@@ -9,5 +9,6 @@ public class convertirMayusculas {
             System.out.println(linea.toUpperCase());
             System.out.flush(); 
         }
+        sc.close();
     }
 }

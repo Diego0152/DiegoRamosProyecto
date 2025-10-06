@@ -1,21 +1,21 @@
-
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class conjuntoProcesos {
+public class ConjuntoProcesos2 {
 
     //Hacemos los 3 arrays constantes para los comandos que vamos a utilizar. 
-    static final String[] COMANDO = {"jar", "cf", "convertir-mayusculas.jar", "convertirMayusculas.class"};
-    static final String[] COMANDO_COMPILER = {"javac","convertirMayusculas.java"};
-    static final String[] COMANDO_EJEC = {"java","-cp","convertir-mayusculas.jar","convertirMayusculas"};
+    static final String[] COMANDO = {"jar", "cf", "realizar-calculo.jar", "RealizarCalculo.class"};
+    static final String[] COMANDO_COMPILER = {"javac","RealizarCalculo.java"};
+    static final String[] COMANDO_EJEC = {"java","-cp","realizar-calculo.jar","RealizarCalculo"};
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Escribe una línea de texto:");
-        String texto = sc.nextLine();
-
-        if (!texto.isEmpty()) {
+    
+        System.out.println("Escribe una linea de calculo ejemplo: 12 - 2 4 + 1.");
+        String linea = sc.nextLine();
+        
+        if (!linea.isEmpty()) {
             try {
 
                 // Hacer el compilador
@@ -34,14 +34,13 @@ public class conjuntoProcesos {
 
                 // Enviar texto al hijo con println + autoFlush
                 try (PrintWriter outEjec = new PrintWriter(procesoEjec.getOutputStream(), true)) {
-                    outEjec.println(texto);
+                    outEjec.println(linea);
                 }
 
                 // Leer toda la salida del hijo
                 try (Scanner scIn = new Scanner(procesoEjec.getInputStream())) {
                     while (scIn.hasNextLine()) {
-                        String resultado = scIn.nextLine();
-                        System.out.println(resultado); 
+                        System.out.println(scIn.nextLine()); 
                     }
                 }
                 //Hacemos que el padre mate al hijo, y así conseguir el texto para después que termine el padre imprimiendo el texto.
