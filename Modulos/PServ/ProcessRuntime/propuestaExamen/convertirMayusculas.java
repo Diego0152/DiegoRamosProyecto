@@ -1,3 +1,4 @@
+package propuestaExamen;
 
 import java.util.Scanner;
 

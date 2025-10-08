@@ -1,0 +1,12 @@
+
+Haciendo ping a www.google.es [216.58.215.131] con 32 bytes de datos:
+Respuesta desde 216.58.215.131: bytes=32 tiempo=22ms TTL=115
+Respuesta desde 216.58.215.131: bytes=32 tiempo=25ms TTL=115
+Respuesta desde 216.58.215.131: bytes=32 tiempo=26ms TTL=115
+Respuesta desde 216.58.215.131: bytes=32 tiempo=25ms TTL=115
+
+Estad¡sticas de ping para 216.58.215.131:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    M¡nimo = 22ms, M ximo = 26ms, Media = 24ms

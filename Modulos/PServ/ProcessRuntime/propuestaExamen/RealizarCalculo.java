@@ -1,3 +1,4 @@
+package propuestaExamen;
 import java.util.Scanner;
 
 public class RealizarCalculo {
@@ -14,15 +15,15 @@ public class RealizarCalculo {
          * valor1, simbolo y valor2 
          */
         for (int i = 0; i < tokens.length; i += 3) {
-            double v1 = Double.parseDouble(tokens[i]);
+            double valor1 = Double.parseDouble(tokens[i]);
             String simbolo = tokens[i + 1];
-            double v2 = Double.parseDouble(tokens[i + 2]);
+            double valor2 = Double.parseDouble(tokens[i + 2]);
 
             switch (simbolo) {
-                case "+" -> System.out.println(v1 + " + " + v2 + " = " + (v1 + v2));
-                case "-" -> System.out.println(v1 + " - " + v2 + " = " + (v1 - v2));
-                case "*" -> System.out.println(v1 + " * " + v2 + " = " + (v1 * v2));
-                case "/" -> System.out.println(v1 + " / " + v2 + " = " + (v1 / v2));
+                case "+" -> System.out.println(valor1 + " + " + valor2 + " = " + (valor1 + valor2));
+                case "-" -> System.out.println(valor1 + " - " + valor2 + " = " + (valor1 - valor2));
+                case "*" -> System.out.println(valor1 + " * " + valor2 + " = " + (valor1 * valor2));
+                case "/" -> System.out.println(valor1 + " / " + valor2 + " = " + (valor1 / valor2));
                 default -> System.out.println("Operador no válido: " + simbolo);
             }
         }
