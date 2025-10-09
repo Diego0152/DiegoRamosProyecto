@@ -1,10 +1,10 @@
 package com.iesvdc.dam.acceso;
 
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.InputStream;
+// import java.io.FileOutputStream;
+// import java.io.InputStream;
 import java.sql.Connection;
-import java.util.Enumeration;
+// import java.util.Enumeration;
 import java.util.Properties;
 
 import com.iesvdc.dam.acceso.conexion.Conexion;
@@ -21,11 +21,16 @@ public class App
         Properties p = getProperties("config.properties");
 
         try (Connection conexion = Conexion.getConection(p)) {
-            System.out.println("Conectado correctamente.");
+            if (conexion!=null) 
+                System.out.println("Conectado correctamente.");
+            else 
+                System.out.println("Imposible conectar");
         } catch (Exception e) {
             System.err.println("No se pudo conectar.");
             e.printStackTrace();
         }
+
+    
         
         /*
         // Así podríamos recorrer las propiedades:

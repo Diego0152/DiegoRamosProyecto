@@ -22,6 +22,30 @@ Instalamos las dependencias Maven:
 * apache poi ooxml
 * mysql 
 
+## El archivo de propiedades
+
+Creamos el archivo **`config.properties`**:
+
+```bash
+user=root
+password=s83n38DGB8d72
+useUnicode=yes
+useJDBCCompliantTimezoneShift=true
+port=33307
+database=agenda
+host=localhost
+driver=MySQL
+outputFile=datos/salida.xlsx
+inputFile=datos/entrada.xlsx
+useSSL=false
+serverTimezone=Europe/Madrid
+allowPublicKeyRetrieval=true
+```
+
+En producción **jamás** debemos de usar estos parámetros:
+
+* `useSSL=false`: No encripta la conexión.
+* `allowPublicKeyRetrieval=true`: No comprueba el certificado (como el candado rojo del navegador)
 
 ## Detectando qué tipo de dato hay con Apache POI
 
