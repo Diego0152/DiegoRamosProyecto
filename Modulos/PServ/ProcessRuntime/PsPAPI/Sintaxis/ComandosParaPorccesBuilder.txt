@@ -1,0 +1,16 @@
+--Son comandos para windows, los de linux os jodeis.
+--Son los comandos que tendreis que poner dentro del process builder
+--He intentado cubrir los más comunes
+
+Acción	Comando en ProcessBuilder
+Compilar un archivo Java	                            new ProcessBuilder("javac", "Programa.java")
+Ejecutar un programa Java	                            new ProcessBuilder("java", "Programa")
+Listar archivos                                         new ProcessBuilder("cmd.exe", "/c", "dir")
+Listar archivos (Windows)	                            new ProcessBuilder("cmd", "/c", "dir")
+Ejecutar Python	                                        new ProcessBuilder("python", "script.py")
+Mostrar versión de Java	                                new ProcessBuilder("java", "--version")
+
+--IMPORTANTE!!! Algunos comandos en windows se necestia escribir "cmd.exe","/c", .... antes del comando para que funcionen, ejemplo:
+"cmd.exe", "/c", "dir"
+
+(Prueba el process builder, si te da 1 en el codigo de error pruebalo con eso del cmd.exe)
