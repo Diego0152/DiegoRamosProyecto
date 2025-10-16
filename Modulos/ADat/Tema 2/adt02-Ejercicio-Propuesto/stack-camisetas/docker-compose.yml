@@ -2,15 +2,14 @@ version: "3"
 services: 
   camisetas:
     image: mysql:latest
-    command: --default-authentication-plugin=mysql_native_password
     restart: "no"
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     ports:
-      - 33308:3306
+      - ${MYSQL_HOST_PORT}:${MYSQL_CONTAINER_PORT}
 
   adminer:
     image: adminer:latest
     restart: "no"
     ports:
-      - 8181:8080
+      - ${ADMINER_HOST_PORT}:${ADMINER_CONTAINER_PORT}
