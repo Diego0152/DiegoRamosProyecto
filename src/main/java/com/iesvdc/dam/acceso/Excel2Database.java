@@ -1,8 +1,10 @@
 package com.iesvdc.dam.acceso;
 
 import java.sql.Connection;
+import java.util.Properties;
 
 import com.iesvdc.dam.acceso.conexion.Conexion;
+import com.iesvdc.dam.acceso.conexion.Config;
 
 /**
  * Este programa genérico en java (proyecto Maven) es un ejercicio 
@@ -22,8 +24,10 @@ import com.iesvdc.dam.acceso.conexion.Conexion;
  */
 public class Excel2Database 
 {
-    public static void main( String[] args )
-    {                
+    public static void main( String[] args ) {                
+
+        Properties props = Config.getProperties("config.properties");
+        props.getProperty("file");
 
         try (Connection conexion = Conexion.getConnection()) {
             if (conexion!=null) 
@@ -34,12 +38,7 @@ public class Excel2Database
             System.err.println("No se pudo conectar.");            
         }
 
-    
-                
-
-        
     }
-
 
 }
 
