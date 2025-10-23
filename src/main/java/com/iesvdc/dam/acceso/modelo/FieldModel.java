@@ -1,5 +1,4 @@
 package com.iesvdc.dam.acceso.modelo;
-import java.util.Objects;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 

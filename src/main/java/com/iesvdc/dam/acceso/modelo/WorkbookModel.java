@@ -2,10 +2,7 @@ package com.iesvdc.dam.acceso.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
-
 import org.apache.commons.lang3.builder.EqualsBuilder;
-
 
 /**
  * El modelo que almacena el libro o lista de tablas.
@@ -25,6 +22,9 @@ public class WorkbookModel {
         return this.tables;
     }
 
+    public void addTable(TableModel table) {
+        this.tables.add(table);
+    }
 
     @Override
     public boolean equals(Object o) {

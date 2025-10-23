@@ -2,8 +2,6 @@ package com.iesvdc.dam.acceso.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
-
 import org.apache.commons.lang3.builder.EqualsBuilder;
 
 /**
@@ -11,6 +9,7 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
  */
 public class TableModel {
     private final String name;
+    private final List<FieldModel> fields = new ArrayList<>();
 
     public TableModel() {
         this.name = "";
@@ -42,6 +41,5 @@ public class TableModel {
             ", fields='" + getFields() + "'" +
             "}";
     }
-    private final List<FieldModel> fields = new ArrayList<>();
-
+    
 }
